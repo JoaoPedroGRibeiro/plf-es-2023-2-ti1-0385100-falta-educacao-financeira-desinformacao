@@ -11,7 +11,7 @@ Tendo isso em vista, tivemos como princípio encontrar uma solução que possa a
  - Bruno Ferraz Pires
  - Eduardo Henrique Moreira dos Santos
  - João Pedro Guimarães Ribeiro
- - Roberta Sophia Carvalho Silva
+ - Roberta Sophia Carvalho Silva.
 
 ## Professores responsáveis
 
