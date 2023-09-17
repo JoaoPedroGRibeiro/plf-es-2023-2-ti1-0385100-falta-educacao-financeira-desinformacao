@@ -21,3 +21,30 @@ Tendo isso em vista, tivemos como princípio encontrar uma solução que possa a
 ## Instruções de utilização
 
 Assim que a primeira versão do sistema estiver disponível, deverá complementar com as instruções de utilização. Descreva como instalar eventuais dependências e como executar a aplicação.
+
+## Histórias de Usuário
+
+- Como Gabriel Arantes, eu quero conseguir alcançar minha estabilidade financeira, para que construa uma família estruturada futuramente.
+
+- Como Rodinei Amaral, eu quero fazer viagens ao redor do mundo, para que eu aproveite com a minha família sem depender exclusivamente do trabalho.
+
+- Como Erika, eu quero espalhar conhecimento por meio da minha influência, para que mais pessoas consigam conquistar a riqueza desejada.
+
+## Requisitos
+
+Requisitos Funcionais:
+
+- Cadastro e Login dos usuários;
+- Controle de Gastos;
+- Gráficos direcionados aos gastos do usuário;
+- Recomendações de investimentos;
+- Descrição do problema no País/Mundo;
+- Consulta/Alteração dos dados pessoais;
+
+Requisitos Não Funcionais:
+
+- Funcionamento Offline;
+- Armazenamento de dados à longo prazo;
+- Sistema Multiplataforma;
+- Rapidez no processamento de dados do usuário;
+- Acessibildade para deficientes visuais/auditivos;
