@@ -4,6 +4,14 @@
 É de amplo conhecimento que, no Brasil, a educação financeira e o controle de gastos são problemas que assolam grande parte da população tupiniquim, seja por falta de oportunidades, falta de incentivo e até mesmo de instrução nas escolas. 
 Tendo isso em vista, tivemos como princípio encontrar uma solução que possa auxiliar no conhecimento sobre o mercado de investimento, além de uma ferramenta fundamental onde o usário poderá ter acesso aos seus gastos de forma prática e um direcionamento de possíveis investimentos que ele possa fazer.
 
+A falta de educação financeira representa um desafio significativo em nossa sociedade. Este problema tem repercussões amplas e profundas que afetam indivíduos, famílias e comunidades em todo o mundo. Abaixo estão alguns aspectos desse problema: 
+
+*Endividamento Descontrolado: Muitas pessoas enfrentam endividamento excessivo devido à falta de compreensão sobre como gerenciar suas finanças de maneira responsável 
+
+*Investimentos Arriscados: A falta de compreensão sobre investimentos pode levar as pessoas a tomar decisões arriscadas e investir em produtos financeiros de alto risco sem entender as implicações 
+
+*Desinformação Financeira: A disseminação de informações financeiras falsas para enganar ou acidentais por meio de mídia, redes sociais e outros canais pode levar a decisões financeiras ruins 
+
 ## Alunos integrantes da equipe
 
  - André Xavier Lazarini
@@ -22,49 +30,3 @@ Tendo isso em vista, tivemos como princípio encontrar uma solução que possa a
 
 Assim que a primeira versão do sistema estiver disponível, deverá complementar com as instruções de utilização. Descreva como instalar eventuais dependências e como executar a aplicação.
 
-## Público-Alvo
-
-Pessoas Fundamentais:
-
-- Pessoas sem conhecimento sobre investimentos;
-- Pessoas que não controlam seus gastos;
-- Pessoas experientes/Investidores;
-
-Pessoas Importantes:
-
-- Gerentes de banco;
-- Gestores/Corretores financeiros;
-- Dependentes financeiros;
-
-Pessoas Influenciadoras:
-
-- Influenciadores Digitais;
-- Familiares;
-- Escola;
-
-## Histórias de Usuário
-
-- Como Gabriel Arantes, eu quero conseguir alcançar minha estabilidade financeira, para que construa uma família estruturada futuramente.
-
-- Como Rodinei Amaral, eu quero fazer viagens ao redor do mundo, para que eu aproveite com a minha família sem depender exclusivamente do trabalho.
-
-- Como Erika, eu quero espalhar conhecimento por meio da minha influência, para que mais pessoas consigam conquistar a riqueza desejada.
-
-## Requisitos
-
-Requisitos Funcionais:
-
-- Cadastro e Login dos usuários;
-- Controle de Gastos;
-- Gráficos direcionados aos gastos do usuário;
-- Recomendações de investimentos;
-- Descrição do problema no País/Mundo;
-- Consulta/Alteração dos dados pessoais;
-
-Requisitos Não Funcionais:
-
-- Funcionamento Offline;
-- Armazenamento de dados à longo prazo;
-- Sistema Multiplataforma;
-- Rapidez no processamento de dados do usuário;
-- Acessibildade para deficientes visuais/auditivos;
