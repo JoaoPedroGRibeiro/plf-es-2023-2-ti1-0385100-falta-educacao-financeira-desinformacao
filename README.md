@@ -22,6 +22,26 @@ Tendo isso em vista, tivemos como princípio encontrar uma solução que possa a
 
 Assim que a primeira versão do sistema estiver disponível, deverá complementar com as instruções de utilização. Descreva como instalar eventuais dependências e como executar a aplicação.
 
+## Público-Alvo
+
+Pessoas Fundamentais:
+
+- Pessoas sem conhecimento sobre investimentos;
+- Pessoas que não controlam seus gastos;
+- Pessoas experientes/Investidores;
+
+Pessoas Importantes:
+
+- Gerentes de banco;
+- Gestores/Corretores financeiros;
+- Dependentes financeiros;
+
+Pessoas Influenciadoras:
+
+- Influenciadores Digitais;
+- Familiares;
+- Escola;
+
 ## Histórias de Usuário
 
 - Como Gabriel Arantes, eu quero conseguir alcançar minha estabilidade financeira, para que construa uma família estruturada futuramente.
