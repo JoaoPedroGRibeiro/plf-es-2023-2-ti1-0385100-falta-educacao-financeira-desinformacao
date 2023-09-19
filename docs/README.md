@@ -38,7 +38,7 @@ Com base em entrevistas realizadas, possível notar que muitas pessoas deixam de
 
 * Pessoas sem conhecimento sobre investimentos;
 * Pessoas que não controlam seus gastos;
-* *essoas experientes/Investidores.
+* Pessoas experientes/Investidores.
 
 ### Pessoas Importantes:
 
