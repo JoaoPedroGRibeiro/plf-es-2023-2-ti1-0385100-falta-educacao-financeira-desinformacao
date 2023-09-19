@@ -106,7 +106,7 @@ Acessibilidade para deficientes visuais/auditivos.
 
 ## User Flow
 
-<img src="/assets/images/fluxo-mobile.png" alt="Fluxo mobile" style="width: 400px;"/>
+<img src="assets/images/fluxo-mobile.png" alt="Fluxo mobile" style="width: 400px;"/>
 
 https://www.figma.com/file/NDnTyx2tDKUUpaITGGGlie/Tiaw---Educa%C3%A7%C3%A3o-Financeira?type=design&node-id=114-113&mode=design&t=jbAXXvSwYOiMdiQe-0
 
