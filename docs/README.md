@@ -34,29 +34,23 @@ Com base em entrevistas realizadas, possível notar que muitas pessoas deixam de
 
 ## Público-Alvo
 
-- Pessoas Fundamentais:
+### Pessoas Fundamentais:
 
-Pessoas sem conhecimento sobre investimentos;
+* Pessoas sem conhecimento sobre investimentos;
+* Pessoas que não controlam seus gastos;
+* *essoas experientes/Investidores.
 
-Pessoas que não controlam seus gastos;
+### Pessoas Importantes:
 
-Pessoas experientes/Investidores.
+* Gerentes de banco;
+* Gestores/Corretores financeiros;
+* Dependentes financeiros.
 
-- Pessoas Importantes:
+### Pessoas Influenciadoras:
 
-Gerentes de banco;
-
-Gestores/Corretores financeiros;
-
-Dependentes financeiros.
-
-- Pessoas Influenciadoras:
-
-Influenciadores Digitais;
-
-Familiares;
-
-Escola.
+* Influenciadores Digitais;
+* Familiares;
+* Escola.
 
 ## Personas
 
@@ -78,29 +72,22 @@ Erika, tenho 32 anos, CEO de uma loja de departamentos. É uma pessoa muito ambi
 
 Os requisitos de um projeto são classificados em dois grupos:
 
-- Requisitos Funcionais:
+### Requisitos Funcionais:
 
-Cadastro e Login dos usuários;
-
-Controle de Gastos;
-
-Gráficos direcionados aos gastos do usuário;
-
-Recomendações de investimentos;
-
-Descrição do problema no País/Mundo;
+* Cadastro e Login dos usuários;
+* Controle de Gastos;
+* Gráficos direcionados aos gastos do usuário;
+* Recomendações de investimentos;
+* Descrição do problema no País/Mundo;
 
 Consulta/Alteração dos dados pessoais.
 
-- Requisitos Não Funcionais:
+### Requisitos Não Funcionais:
 
-Funcionamento Offline;
-
-Armazenamento de dados à longo prazo;
-
-Sistema Multiplataforma;
-
-Rapidez no processamento de dados do usuário;
+* Funcionamento Offline;
+* Armazenamento de dados à longo prazo;
+* Sistema Multiplataforma;
+* Rapidez no processamento de dados do usuário;
 
 Acessibilidade para deficientes visuais/auditivos.
 
@@ -116,6 +103,7 @@ https://www.figma.com/file/NDnTyx2tDKUUpaITGGGlie/Tiaw---Educa%C3%A7%C3%A3o-Fina
 ## Wireframes
 
 https://www.figma.com/file/NDnTyx2tDKUUpaITGGGlie/Untitled?type=design&node-id=0%3A1&mode=design&t=zgZrI8pCrrcnbCCh-1
+
 https://www.figma.com/file/NDnTyx2tDKUUpaITGGGlie/Tiaw---Educação-Financeira?type=design&node-id=114%3A113&mode=design&t=VK0K6QBQUWtQuKR7-1
 
 ## Gestão de Projetos
