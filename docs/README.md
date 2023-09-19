@@ -105,8 +105,11 @@ Rapidez no processamento de dados do usuário;
 Acessibilidade para deficientes visuais/auditivos.
 
 ## User Flow
-
+### Mobile
 <img src="assets/images/fluxo-mobile.png" alt="Fluxo mobile" style="width: 400px;"/>
+
+### Web
+<img src="assets/images/fluxo-web.png" alt="Fluxo web" style="width: 400px;"/>
 
 https://www.figma.com/file/NDnTyx2tDKUUpaITGGGlie/Tiaw---Educa%C3%A7%C3%A3o-Financeira?type=design&node-id=114-113&mode=design&t=jbAXXvSwYOiMdiQe-0
 
