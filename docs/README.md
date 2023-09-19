@@ -99,7 +99,7 @@ Acessibilidade para deficientes visuais/auditivos.
 
 [Link fluxo](https://www.figma.com/file/NDnTyx2tDKUUpaITGGGlie/Tiaw---Educa%C3%A7%C3%A3o-Financeira?type=design&node-id=114-113&mode=design&t=jbAXXvSwYOiMdiQe-0)
 
-### Protótipo Interativo
+## Protótipo Interativo
 [Link protótipo interativo](https://www.figma.com/proto/NDnTyx2tDKUUpaITGGGlie/Tiaw---Educa%C3%A7%C3%A3o-Financeira?type=design&node-id=5-2&t=XJO1jfSvP0hcXWoG-1&scaling=min-zoom&page-id=0%3A1&starting-point-node-id=5%3A2&show-proto-sidebar=1&mode=design)
 
 ## Wireframes
