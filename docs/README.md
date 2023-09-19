@@ -97,6 +97,8 @@ Acessibilidade para deficientes visuais/auditivos.
 ### Web
 <img src="assets/images/fluxo-web.png" alt="Flow web" style="width: 400px;"/>
 
+### Protótipo Interativo
+
 https://www.figma.com/file/NDnTyx2tDKUUpaITGGGlie/Tiaw---Educa%C3%A7%C3%A3o-Financeira?type=design&node-id=114-113&mode=design&t=jbAXXvSwYOiMdiQe-0
 
 ## Wireframes
