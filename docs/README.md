@@ -97,9 +97,10 @@ Acessibilidade para deficientes visuais/auditivos.
 ### Web
 <img src="assets/images/fluxo-web.png" alt="Flow web" style="width: 400px;"/>
 
-### Protótipo Interativo
+[Link fluxo](https://www.figma.com/file/NDnTyx2tDKUUpaITGGGlie/Tiaw---Educa%C3%A7%C3%A3o-Financeira?type=design&node-id=114-113&mode=design&t=jbAXXvSwYOiMdiQe-0)
 
-https://www.figma.com/file/NDnTyx2tDKUUpaITGGGlie/Tiaw---Educa%C3%A7%C3%A3o-Financeira?type=design&node-id=114-113&mode=design&t=jbAXXvSwYOiMdiQe-0
+### Protótipo Interativo
+[Link protótipo interativo](https://www.figma.com/proto/NDnTyx2tDKUUpaITGGGlie/Tiaw---Educa%C3%A7%C3%A3o-Financeira?type=design&node-id=5-2&t=XJO1jfSvP0hcXWoG-1&scaling=min-zoom&page-id=0%3A1&starting-point-node-id=5%3A2&show-proto-sidebar=1&mode=design)
 
 ## Wireframes
 ### Mobile
@@ -107,9 +108,8 @@ https://www.figma.com/file/NDnTyx2tDKUUpaITGGGlie/Tiaw---Educa%C3%A7%C3%A3o-Fina
 
 ### Web
 <img src="assets/images/wire-web.png" alt="Fluxo web" style="width: 400px;"/>
-https://www.figma.com/file/NDnTyx2tDKUUpaITGGGlie/Untitled?type=design&node-id=0%3A1&mode=design&t=zgZrI8pCrrcnbCCh-1
 
-https://www.figma.com/file/NDnTyx2tDKUUpaITGGGlie/Tiaw---Educação-Financeira?type=design&node-id=114%3A113&mode=design&t=VK0K6QBQUWtQuKR7-1
+[Link wireframe](https://www.figma.com/file/NDnTyx2tDKUUpaITGGGlie/Untitled?type=design&node-id=0%3A1&mode=design&t=zgZrI8pCrrcnbCCh-1)
 
 ## Gestão de Projetos
 
