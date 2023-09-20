@@ -113,5 +113,6 @@ Acessibilidade para deficientes visuais/auditivos.
 
 ## Gestão de Projetos
 
-https://trello.com/b/0Ex7IfI6/tiaw
 (Divisão de tarefas também disponível no Kanban, no GitHub)
+[Trello](https://trello.com/b/0Ex7IfI6/tiaw)
+[Link GitHub Projects](https://github.com/orgs/ICEI-PUC-Minas-PPLES-TI/projects/262)
