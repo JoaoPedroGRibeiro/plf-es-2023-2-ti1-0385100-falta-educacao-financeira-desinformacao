@@ -1,0 +1,50 @@
+#msg {
+     height: 60px;
+ }
+ #grid-contatos tbody {
+     cursor: pointer;
+ }
+
+ #holderFormInvestimentos {
+    background-color: rgb(252, 252, 252);
+    border: solid rgb(204, 204, 204) 1px;
+    border-radius: 10px;
+    padding: 30px;
+    width: 600px;
+    box-shadow: 0px 0 10px rgb(156, 148, 148);
+
+ }
+
+ .linhaFormulario {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+ }
+
+ .linhaFormulario div {
+    width: 260px;
+ }
+
+.campoFormulario {
+    margin: 5px;
+    display: flex;
+    flex-direction: column;
+}
+
+.holderInvestimento {
+    background-color: rgb(252, 252, 252);
+    border: solid rgb(204, 204, 204) 1px;
+    box-shadow: 0px 0 10px rgb(156, 148, 148);
+    border-radius: 10px;
+    margin: 8px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.linhaRegistro {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
