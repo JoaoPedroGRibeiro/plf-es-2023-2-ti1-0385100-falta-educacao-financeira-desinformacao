@@ -1,0 +1,63 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #2b7f99;
+}
+
+.titulo {
+  color: whitesmoke;
+  align-items: center;
+  text-align: center;
+  margin: 50px;
+  border-radius: 2px;
+  border-bottom: whitesmoke solid 2px;
+}
+.titulo h1{
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+
+.imagemdestaque {
+  text-align: center;
+  margin: 50px;
+}
+
+.imagemdestaque img {
+  width: 450px;
+}
+
+.botão {
+  text-align: center;
+  margin: 50px;
+ 
+}
+.botão button {
+  background: rgb(91, 121, 250);
+  color: white;
+  border-style: outset;
+  border-color: #0066a2;
+  height: 60px;
+  width: 120px;
+  font: bold 15px arial, sans-serif;
+  text-shadow: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.botão button:hover {
+    background: #0066a1;
+    color: black;
+    border-style: inset;
+    border-color: #0066a1;
+    height: 60px;
+    width: 120px;
+    font: bold 15px arial, sans-serif;
+    text-shadow: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+button a {
+    text-decoration: none;
+    color: white;
+}
