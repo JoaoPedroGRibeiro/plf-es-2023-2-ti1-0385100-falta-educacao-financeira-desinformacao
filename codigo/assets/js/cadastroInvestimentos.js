@@ -1,5 +1,19 @@
+
 const apiUrl = 'https://jsonserver--robertasophiacs.repl.co/investimentos';
 var nomesInvestimentos = [];
+var imediato = false;
+
+function verificarResgate(evento) {
+    const dataResgate = document.getElementById('inputResgate');
+    dataResgate.readOnly = false;
+    imediato = false;
+
+    if (evento.target.checked) {
+        dataResgate.value = '';
+        dataResgate.readOnly = true;
+        imediato = true;
+    }
+}
 
 function verificarInvestimento(evento) {
     nomesInvestimentos = [];
@@ -25,6 +39,8 @@ function verificarInvestimento(evento) {
 }
 
 function cadastrarInvestimento(evento) {
+    evento.preventDefault();
+
     const body = {
         "id_cliente": 1,
         "nome": document.getElementById('inputNome').value,
@@ -32,31 +48,40 @@ function cadastrarInvestimento(evento) {
         "investimento": document.getElementById('selectInvestimento').value,
         "instituicao": document.getElementById('inputInstituicao').value,
         "valor": document.getElementById('inputValor').value,
-        "resgate": 'Imediato',
+        "resgate": imediato ? 'Imediato' : document.getElementById('inputResgate').value
     }
 
-    console.log(body);
-
-    createContato(body, exibeContatos);
+    criarInvestimento(body, refrescarPagina);
 }
 
-function exibeContatos() {
+function refrescarPagina() {
+    fecharForm();
+    exibeInvestimentos();
+}
+
+function exibeInvestimentos() {
     tabelaInvestimentos = document.getElementById("holderRegistrosInvestimento");
 
-    // Remove todas as linhas do corpo da tabela
     tabelaInvestimentos.innerHTML = "";
 
-    readContato(dados => {
-        // Popula a tabela com os registros do banco de dados
+    lerDados(dados => {
         dados.forEach((registro) => {
+            const letters = '0123456789ABCDEF';
+            let color = '#';
+
+            for (let i = 0; i < 6; i++) {
+                color += letters[Math.floor(Math.random() * 16)];
+            }
+
             tabelaInvestimentos.innerHTML += `
             <div class="holderInvestimento">
+            <div class="decoracao" style="background-color:${color}"></div>
                 <div class="linhaRegistro">
-                    <h3>${registro.instituicao}</h3>
+                    <h3>${registro.instituicao.toUpperCase()}</h3>
                     <h3>${registro.tipo}</h3>
                 </div>
                 <div>
-                    <h2>${registro.investimento}</h2>
+                    <b><h2>${registro.investimento.toUpperCase()}</h2></b>
                 </div>
                 <div class="linhaRegistro">
                     <h4>${registro.valor}</h4>
@@ -67,24 +92,35 @@ function exibeContatos() {
     })
 }
 
-function displayMessage(mensagem) {
-    msg = document.getElementById('msg');
-    msg.innerHTML = '<div class="alert alert-warning">' + mensagem + '</div>';
+function fecharForm() {
+    const formulario = document.getElementById('holderFormInvestimentos');
+    const fundoFormulario = document.getElementById('fundoForms');
+
+    formulario.style.display = 'none';
+    fundoFormulario.style.display = 'none';
 }
 
-function readContato(processaDados) {
+function abrirForm() {
+    const formulario = document.getElementById('holderFormInvestimentos');
+    const fundoFormulario = document.getElementById('fundoForms');
+
+    formulario.style.display = 'block';
+    fundoFormulario.style.display = 'block';
+}
+
+function lerDados(processaDados) {
     fetch(apiUrl)
         .then(response => response.json())
         .then(data => {
             processaDados(data);
         })
         .catch(error => {
-            console.error('Erro ao ler contatos via API JSONServer:', error);
-            displayMessage("Erro ao ler contatos");
+            console.error('Erro ao ler investimentos via API JSONServer:', error);
+            mostrarMensagem('Problema ao inserir os investimentos!', 'danger')
         });
 }
 
-function createContato(contato, refreshFunction) {
+function criarInvestimento(contato, refreshFunction) {
     fetch(apiUrl, {
         method: 'POST',
         headers: {
@@ -92,14 +128,30 @@ function createContato(contato, refreshFunction) {
         },
         body: JSON.stringify(contato),
     })
-        .then(response => response.json())
-        .then(data => {
-            displayMessage("Contato inserido com sucesso");
+        .then((data) => {
+            mostrarMensagem('Investimento inserido com sucesso', 'success');
+            document.getElementById('inputNome').value = '';
+            document.getElementById('selectTipo').value = '';
+            document.getElementById('selectInvestimento').value = '';
+            document.getElementById('inputInstituicao').value = '';
+            document.getElementById('inputValor').value = '';
+            document.getElementById('inputResgate').value = '';
             if (refreshFunction)
                 refreshFunction();
         })
         .catch(error => {
-            console.error('Erro ao inserir contato via API JSONServer:', error);
-            displayMessage("Erro ao inserir contato");
+            console.error('Erro ao inserir investimento via API JSONServer:', error);
+            mostrarMensagem("Erro ao inserir investimento!", 'danger');
         });
+}
+
+function mostrarMensagem(mensagem, tema) {
+    const container = document.getElementById('alertas');
+    container.innerHTML = `
+    <div class="alert alert-${tema}" role="alert">
+        ${mensagem}
+        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+        </button>
+       </div>`
 }
