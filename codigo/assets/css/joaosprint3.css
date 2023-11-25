@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;700&family=Roboto:wght@100;300;400;500;700;900&family=Source+Sans+Pro:wght@200;300;400;600;700;900&display=swap');
+
+main{
+    font-family: 'Poppins', sans-serif;
+    padding:0;
+    margin: 40px;;
+}
+
+body{
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+.buscar{
+    width: 100%;
+    background: #075da8;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.header {
+    min-height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 40px 40px;
+    width: 95%;
+}
+
+.header span {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 900;
+    font-size: 30px;
+    word-break: break-all;
+
+}
+
+#new {
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    padding: 8px;
+    border-radius: 5px;
+    border: none;
+    color: white;
+    background-color: #075da8;
+    text-decoration: none;
+}
+
+#new:hover {
+    background-color: darkblue;
+    transition: 0.5s;
+}
+
+input{
+    font-family: 'Poppins', sans-serif;
+    width: 95%;
+    height: 40px;
+    padding-left: 20px;
+    font-size:15px;
+    border:1px solid #ffffff;
+    margin:15px;
+    border-radius:5px;
+}
+
+#tipo{
+    color: #075da8;
+}
+
+.card{
+    border: 2px solid #f0f0f0e1;
+}
+
+.card:hover{
+    background-color: aliceblue;
+    border: 2px solid #c7d6e4;
+}
+
+@media (max-width: 700px) {
+    body {
+        font-size: 10px;
+    }
+
+    .header span {
+        font-size: 15px;
+    }
+
+    #new {
+        padding: 5px;
+        font-size: 10px;
+        margin-right: 60px;
+    }
+}
