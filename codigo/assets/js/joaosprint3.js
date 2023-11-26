@@ -1,4 +1,4 @@
-const apiUrl = 'https://jsonserver--joaoribeiro1485.repl.co/gastos';
+const apiUrl = 'https://jsonservertiaw--robertasophiacs.repl.co/gastos';
 const listaGastos = document.getElementById('listaGastos');
 const inputBusca = document.getElementById('inputBusca');
 
