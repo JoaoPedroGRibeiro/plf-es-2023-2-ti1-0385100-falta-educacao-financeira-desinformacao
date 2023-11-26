@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Cadastro de Categorias</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="../assets/css/brunoBFsprint3.css">
+</head>
+
+<body onload="init()">
+  <h1>Cadastro de Categorias</h1>
+
+  <div class="container">
+    <div class="row">
+      <div id="msg" class="col-sm-10 offset-sm-1 ">
+
+      </div>
+    </div>
+
+    <form id="form-contato">
+      <div class="form-group row">
+        <div class="col-sm-4">
+          <label for="inputId">Id</label>
+          <input type="text" class="form-control" id="inputId" placeholder="ID" disabled>
+        </div>
+        <div class="col-sm-8">
+          <label for="inputDes">Descrição (*)</label>
+          <input type="text" class="form-control" id="inputDesc" required placeholder="Descreva o gasto">
+        </div>
+      </div>
+      <div class="form-group row">
+        <div class="col-sm-5">
+          <label for="inputValor">Valor (*)</label>
+          <input type="text" class="form-control" id="inputValor" required placeholder="Valor do gasto">
+        </div>
+        <div class="col-sm-7">
+          <label for="inputData">Data (*)</label>
+          <input type="email" class="form-control" id="inputData" required placeholder="Informe a data do gasto">
+        </div>
+      </div>
+      <div class="form-group row">
+        <div class="col-sm-6">
+          <label for="inputLocal">Local</label>
+          <input type="text" class="form-control" id="inputLocal" placeholder="Coloque o local onde ocorreu">
+        </div>
+        <div class="col-sm-6">
+          <label for="inputCategoria">Categoria</label>
+          <input type="text" class="form-control" id="inputCategoria" required
+            placeholder="Informe a categoria do gasto">
+        </div>
+        <div class="col-sm-6">
+          
+        </div>
+        
+        <div class="form-group row">
+          <div class="col-sm-10">
+            <small>(*) Campos obrigatórios</small>
+          </div>
+          <div class="col-sm-6">
+          
+          </div>
+        
+          <div class="col-sm-6">
+        
+        </div>
+
+       
+        </div>
+        <div class="form-group row">
+          <div class="col-sm-14-md-12">
+            <input type="button" class="btn btn-info" id="btnInsert" value="Inserir">
+            <input type="button" class="btn btn-info" id="btnUpdate" value="Alterar">
+            <input type="button" class="btn btn-info" id="btnDelete" value="Excluir">
+            <input type="button" class="btn btn-info" id="btnClear" value="Limpar Form">
+            <a href="brunoBFsprint3.1.html"><input type="button" class="btn btn-info" id="btnClear"
+                value="Pesquisar Gastos"></a>
+          </div>
+        </div>
+    </form>
+
+    <div class="row">
+      <div class="col-sm-14" style="width: 100%;">
+        <table id="grid-gastos" class="table table-striped">
+          <thead>
+            <tr>
+              <th scope="col">#</th>
+              <th scope="col">Descrição</th>
+              <th scope="col">Valor</th>
+              <th scope="col">Data</th>
+              <th scope="col">Local</th>
+              <th scope="col">Categoria</th>
+            </tr>
+          </thead>
+          <tbody id="table-gastos">
+            <tr>
+              <td scope="row">1</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+    
+
+  <script src="../assets/js/brunoBFsprint3.js"></script>
+  <script>
+    function exibeGastos() {
+      tableGastos = document.getElementById("table-gastos");
+
+
+      tableGastos.innerHTML = "";
+
+      readGastos(dados => {
+
+        for (i = 0; i < dados.length; i++) {
+          let gastos = dados[i];
+          tableGastos.innerHTML += `<tr><td scope="row">${gastos.id}</td>
+                                                    <td>${gastos.desc}</td>
+                                                    <td>${gastos.valor}</td>
+                                                    <td>${gastos.data}</td>
+                                                    <td>${gastos.local}</td>
+                                                    <td>${gastos.categoria}</td>
+                                                    
+                                                </tr>`;
+        }
+      })
+    }
+
+    function init() {
+
+      formGastos = document.getElementById("form-gastos");
+
+
+      btnInsert = document.getElementById("btnInsert");
+      btnInsert.addEventListener('click', function () {
+
+
+
+
+        let campoDesc = document.getElementById('inputDesc').value;
+        let campoValor = document.getElementById('inputValor').value;
+        let campoData = document.getElementById('inputData').value;
+        let campoLocal = document.getElementById('inputLocal').value;
+        let campoCategoria = document.getElementById('inputCategoria').value;
+
+
+
+        let gastos = {
+          desc: campoDesc,
+          valor: campoValor,
+          data: campoData,
+          local: campoLocal,
+          categoria: campoCategoria,
+
+        };
+
+
+        createGastos(gastos, exibeGastos);
+
+
+        formGastos.reset()
+      });
+
+
+      btnUpdate = document.getElementById("btnUpdate");
+      btnUpdate.addEventListener('click', function () {
+
+        let campoId = document.getElementById("inputId").value;
+        if (campoId == "") {
+          displayMessage("Selecione antes um contato para ser alterado.");
+          return;
+        }
+
+
+        let campoDesc = document.getElementById('inputDesc').value;
+        let campoValor = document.getElementById('inputValor').value;
+        let campoData = document.getElementById('inputData').value;
+        let campoLocal = document.getElementById('inputLocal').value;
+        let campoCategoria = document.getElementById('inputCategoria').value;
+
+
+
+        let gastos = {
+          desc: campoDesc,
+          valor: campoValor,
+          data: campoData,
+          local: campoLocal,
+          categoria: campoCategoria,
+
+        };
+
+        updateGastos(parseInt(campoId), gastos, exibeGastos);
+
+
+        formGastos.reset()
+      });
+
+
+      btnDelete = document.getElementById('btnDelete');
+      btnDelete.addEventListener('click', function () {
+        let campoId = document.getElementById('inputId').value;
+        if (campoId == "") {
+          displayMessage("Selecione um contato a ser excluído.");
+          return;
+        }
+
+
+        deleteGastos(parseInt(campoId), exibeGastos);
+
+
+        formGastos.reset()
+      });
+
+
+      btnClear = document.getElementById('btnClear');
+      btnClear.addEventListener('click', function () {
+        formGastos.reset()
+      });
+
+
+      msg = document.getElementById('msg');
+      msg.addEventListener("DOMSubtreeModified", function (e) {
+        if (e.target.innerHTML == "") return;
+        setTimeout(function () {
+          alert = msg.getElementsByClassName("alert");
+          alert[0].remove();
+        }, 5000);
+      })
+
+
+      gridGastos = document.getElementById("grid-gastos");
+      gridGastos.addEventListener('click', function (e) {
+        if (e.target.tagName == "TD") {
+
+
+          let linhaGastos = e.target.parentNode;
+          colunas = linhaGastos.querySelectorAll("td");
+
+
+          document.getElementById('inputId').value = colunas[0].innerText;
+          document.getElementById('inputDesc').value = colunas[1].innerText;
+          document.getElementById('inputValor').value = colunas[2].innerText;
+          document.getElementById('inputData').value = colunas[3].innerText;
+          document.getElementById('inputLocal').value = colunas[4].innerText;
+          document.getElementById('inputCategoria').value = colunas[5].innerText;
+
+        }
+      });
+
+      exibeGastos();
+    }
+  </script>
+</body>
+
+</html>
