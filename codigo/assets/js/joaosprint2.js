@@ -1,4 +1,4 @@
-const apiUrl = 'https://jsonserver--joaoribeiro1485.repl.co/gastos';
+const apiUrl = 'https://jsonservertiaw--robertasophiacs.repl.co/gastos';
 
 function init() {
     // Define uma variável para o formulário de contato

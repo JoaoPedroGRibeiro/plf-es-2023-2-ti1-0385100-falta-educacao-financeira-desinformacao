@@ -8,10 +8,10 @@
         <title>Cadastro de Contatos</title>
         <link rel="stylesheet"
             href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
-        <link rel="stylesheet" href="../assets/css/style.css">
+        <link rel="stylesheet" href="../assets/css/investimentos.css">
     </head>
 
-    <body onload="exibeInvestimentos()">
+    <body onload="carregaDados()">
         <div id="fundoForms"></div>
         <header>
             <nav>
@@ -58,16 +58,23 @@
         <div id="holder_info">
             <div id="alertas">
             </div>
+
+            <!-- POPUP PERMISSAO PARA DELETAR -->
+            <div id="modal">
+            </div>
+
             <div id="holderFormInvestimentos">
-                <form id="formInvestimentos"
-                    onsubmit="cadastrarInvestimento(event)">
+                <form id="formInvestimentos">
                     <div class="topoModal">
-                        <h1>Cadastrar</h1>
-                        <a onclick="fecharForm()">
-                        <svg xmlns="http://www.w3.org/2000/svg" height="24"
-                            viewBox="0 -960 960 960" width="24"><path
+                        <h1 id="tituloModal">Cadastrar</h1>
+                        <a id="fecharholderFormInvestimentos" onclick="fecharForm()">
+                            <div id="fecharholderFormInvestimentos">
+                                <svg id="fecharholderFormInvestimentos" xmlns="http://www.w3.org/2000/svg" height="24"
+                            viewBox="0 -960 960 960" width="24"><path id="fecharholderFormInvestimentos"
                                 d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z" /></svg></a>
 
+                            </div>
+                        
                     </div>
                     <div class="linhaFormulario">
                         <div class="campoFormulario">
@@ -107,25 +114,26 @@
                         <div class="campoFormulario">
                             <label for="inputResgate">Resgate</label>
                             <input id="inputResgate" type="date" required>
-                            <div><label>Imediato</label>
+                            <div id="linhaImediato"><label>Imediato</label>
                                 <input type="checkbox" name="Imediato"
                                     id="selectResgate"
                                     onclick="verificarResgate(event)">
                             </div>
                         </div>
                     </div>
-                    <div class="botoesFormRegistro">
+                    <div class="botoesModal">
                         <input type="submit" value="Salvar"
                             style="background-color: #075da8; color:aliceblue">
-                        <input value="Cancelar" type="button"
+                        <input value="Cancelar" type="button" id="fecharholderFormInvestimentos"
                             onclick="fecharForm()">
                     </div>
                 </form>
             </div>
+
             <div id="backRegistros">
                 <div id="cabecalhoRegistros">
-                    <h1>Registros</h1>
                     <div id="funcoesRegistros">
+                        <input type="search" placeholder="Pesquise algo..." oninput="pesquisarInvestimento(event)">
                         <button onclick="abrirForm(event)">Criar</button>
                     </div>
                 </div>

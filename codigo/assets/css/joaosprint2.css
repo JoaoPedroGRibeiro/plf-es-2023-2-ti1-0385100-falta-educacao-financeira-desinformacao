@@ -20,6 +20,10 @@ a {
     cursor: pointer;
 }
 
+.container {
+    width: 80%;
+}
+
 .header {
     min-height: 70px;
     display: flex;

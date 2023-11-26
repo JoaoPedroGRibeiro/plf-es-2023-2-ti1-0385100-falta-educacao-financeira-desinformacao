@@ -1,0 +1,312 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans&family=Poppins&display=swap');
+
+#msg {
+    height: 60px;
+}
+
+#grid-contatos tbody {
+    cursor: pointer;
+}
+
+#holderFormInvestimentos {
+    background-color: rgb(252, 252, 252);
+    border: solid rgb(204, 204, 204) 1px;
+    border-radius: 10px;
+    padding: 30px;
+    width: 600px;
+    box-shadow: 0px 0 10px rgb(156, 148, 148);
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: none;
+}
+
+#modal {
+    background-color: rgb(252, 252, 252);
+    border: solid rgb(204, 204, 204) 1px;
+    border-radius: 10px;
+    padding: 30px;
+    width: 300px;
+    box-shadow: 0px 0 10px rgb(156, 148, 148);
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: none;
+}
+
+#fundoForms {
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    opacity: 0.3;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: none;
+}
+
+.linhaFormulario {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.linhaFormulario div {
+    width: 260px;
+}
+
+.campoFormulario {
+    margin: 5px;
+    display: flex;
+    flex-direction: column;
+}
+
+#holderRegistrosInvestimento {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.holderInvestimento {
+    background-color: rgb(252, 252, 252);
+    border: solid rgb(204, 204, 204) 1px;
+    box-shadow: 0px 0 10px rgb(156, 148, 148);
+    border-radius: 10px;
+    margin: 8px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+}
+
+.holderIcons svg {
+    margin: 5px;
+}
+
+.svgEditar {
+    fill: #075da8;
+}
+
+.svgDeletar {
+    fill: rgb(181, 8, 8);
+}
+
+
+.holderIcons svg:hover {
+    transform: scale(1.05, 1.05);
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+
+.linhaRegistro {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.cabecalhoRegistro {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: right;
+}
+
+.cabecalhoRegistro svg {
+    margin: 3px;
+}
+
+.decoracao {
+    width: 100%;
+    height: 8px;
+    border-radius: 5px;
+    margin-bottom: 4px;
+}
+
+#backRegistros {
+    padding: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+body {
+    display: flex;
+    flex-direction: row;
+    background-color: rgb(247, 245, 245);
+}
+
+h3 {
+    font-size: 1.2em;
+}
+
+h2 {
+    font-size: 1.5em;
+}
+
+h4 {
+    font-size: 1em;
+}
+
+h2, h3, h4 {
+    font-family: 'Noto Sans', sans-serif;
+}
+
+#cabecalhoRegistros {
+    text-align: center;
+    width: 100%;
+}
+
+#funcoesRegistros {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+}
+
+#funcoesRegistros button {
+    padding: 8px 15px;
+    margin: 5px;
+    border-radius: 6px;
+    background-color: rgb(255, 135, 65);
+}
+
+#funcoesRegistros ul {
+    display: inline-flex;
+    align-items: center;
+    justify-content: space-around;
+    list-style: none;
+}
+
+input, select {
+    border-radius: 5px;
+    border: solid 1px grey;
+    cursor: pointer;
+}
+
+input:read-only {
+    background-color: rgb(208, 208, 208);
+    color: rgb(139, 139, 139);
+}
+
+.botoesModal {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.botoesModal input {
+    padding: 8px 16px;
+    margin: 5px;
+    border-radius: 9px;
+
+}
+
+.topoModal {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+#holder_info {
+    width: 100%;
+}
+
+header {
+    width: 210px;
+}
+
+nav {
+    background-color: #075da8;
+    width: 190px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+}
+
+nav ul {
+    margin-top: 20px;
+    list-style: none;
+    padding-inline-start: 0;
+}
+
+nav li {
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+    color: aliceblue;
+    cursor: pointer;
+}
+
+svg {
+    fill: rgb(255, 109, 46);
+}
+
+nav li:hover {
+    background-color: #06559a;
+}
+
+nav li:hover p {
+    transform: scale(1.04, 1.04);
+    transition-duration: 0.4s;
+}
+
+@media (max-width: 700px) {
+    .navegacao p {
+        display: none;
+    }
+
+    nav, header {
+        width: 50px;
+    }
+
+    h3 {
+        font-size: 0.9em;
+    }
+
+    h2 {
+        font-size: 1.2em;
+    }
+
+    h4 {
+        font-size: 0.6em;
+    }
+
+    #holderFormInvestimentos {
+        width: 80%;
+        flex-wrap: wrap;
+    }
+
+    .linhaFormulario {
+        flex-direction: column;
+        margin-left: 0px;
+        align-items: center;
+        flex-wrap: wrap;
+
+    }
+
+    #cabecalhoRegistros {
+        margin-left: 60px;
+    }
+
+    .linhaFormulario div {
+        width: 150px;
+    }
+
+    #linhaImediato {
+        width: 80%;
+    }
+
+    input[type=text], input[type=number], input[type=date], select {
+        width: 140px;
+        margin: 0;
+        padding: 0;
+    }
+}

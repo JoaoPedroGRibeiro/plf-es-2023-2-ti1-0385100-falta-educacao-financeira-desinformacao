@@ -10,6 +10,18 @@ body{
     background-color: rgba(0, 0, 0, 0.1);
 }
 
+nav{
+    padding-top: 50px;
+}
+
+.contAll {
+    width: 80%;
+    position: absolute;
+    right: 10px;
+    top: 31px;
+    margin: 10px;
+}
+
 .buscar{
     width: 100%;
     background: #075da8;
@@ -92,3 +104,22 @@ input{
         margin-right: 60px;
     }
 }
+
+@media (max-width: 1000px) and (min-width: 700px) {
+    .contAll {
+        width: 75%;
+    }
+    #listaGastos {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .mb-4 {
+        width: 200px;
+    }
+
+
+}
+
