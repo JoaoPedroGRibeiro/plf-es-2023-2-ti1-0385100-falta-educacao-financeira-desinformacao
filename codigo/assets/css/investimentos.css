@@ -218,36 +218,6 @@ input:read-only {
     width: 100%;
 }
 
-header {
-    width: 210px;
-}
-
-nav {
-    background-color: #075da8;
-    width: 190px;
-    position: fixed;
-    top: 0;
-    left: 0;
-    height: 100%;
-}
-
-nav ul {
-    margin-top: 20px;
-    list-style: none;
-    padding-inline-start: 0;
-}
-
-nav li {
-    padding: 10px;
-    display: flex;
-    flex-direction: row;
-    color: aliceblue;
-    cursor: pointer;
-}
-
-svg {
-    fill: rgb(255, 109, 46);
-}
 
 nav li:hover {
     background-color: #06559a;
