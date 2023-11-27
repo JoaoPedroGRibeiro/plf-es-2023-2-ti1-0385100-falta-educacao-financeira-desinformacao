@@ -3,6 +3,7 @@ const apiUrl = 'https://jsonservertiaw--robertasophiacs.repl.co/gastos';
 function init() {
     // Define uma variável para o formulário de contato
     FormGasto = document.getElementById("formActive");
+    readTipoGasto(preencheSelect);
 
     // Adiciona funções para tratar os eventos 
     btnAdd = document.getElementById("btnAdd");
@@ -37,6 +38,21 @@ function init() {
     });
 }
 
+function preencheSelect(data){
+    console.log(data);
+    const selectGasto = document.getElementById('inputTipo');
+    selectGasto.innerHTML = '';
+
+    selectGasto.innerHTML += `
+    <option value="">Selecione um valor</option>`;
+
+    data.forEach((gasto) => {
+        const tipoGasto = `
+        <option value="${gasto.nome}">${gasto.nome}</option>`;
+        selectGasto.innerHTML += tipoGasto;
+    })
+}
+
 function displayMessage(mensagem) {
     msg = document.getElementById('msg');
     msg.innerHTML = '<div class="alert alert-warning">' + mensagem + '</div>';
@@ -52,6 +68,20 @@ function readGasto(processaDados) {
             console.error('Erro ao ler gastos via API JSONServer:', error);
             displayMessage("Erro ao ler gastos");
         });
+}
+
+function readTipoGasto(preencheSelect){
+    const url = 'https://jsonservertiaw--robertasophiacs.repl.co/tipoGastos';
+    fetch(url)
+        .then(response => response.json())
+        .then(data => {
+            preencheSelect(data);
+        })
+        .catch(error => {
+            console.error('Erro ao ler gastos via API JSONServer:', error);
+            displayMessage("Erro ao ler gastos");
+        });
+
 }
 
 function createGasto(gastos, refreshFunction) {
