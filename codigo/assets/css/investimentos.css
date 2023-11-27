@@ -82,6 +82,12 @@
     width: 80%;
 }
 
+.holderInvestimento:hover {
+    background-color: aliceblue;
+    transform: scale(1.02, 1.02);
+    transition-duration: 0.4s;
+}
+
 .holderIcons svg {
     margin: 5px;
 }

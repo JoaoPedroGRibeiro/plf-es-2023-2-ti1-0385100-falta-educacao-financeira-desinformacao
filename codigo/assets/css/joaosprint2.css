@@ -49,6 +49,24 @@ a {
     text-decoration: none;
 }
 
+#btnCadastroGasto {
+    background-color: #075da8;
+    padding: 10px;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+#btnCadastroGasto:hover {
+    background-color: darkblue;
+    transition: 0.5s;
+}
+
+#inputTipo {
+    border-radius: 5px;
+    border: solid 1px lightgray;
+}
+
 
 @media (max-width: 700px) {
     body {

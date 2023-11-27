@@ -81,12 +81,13 @@ input{
 }
 
 .card{
-    border: 2px solid #f0f0f0e1;
+    box-shadow: 0px 0 10px rgb(156, 148, 148);
 }
 
 .card:hover{
     background-color: aliceblue;
-    border: 2px solid #c7d6e4;
+    transform: scale(1.02, 1.02);
+    transition-duration: 0.4s;
 }
 
 @media (max-width: 700px) {
