@@ -1,5 +1,4 @@
-
-const apiUrl = 'https://jsonserver-bb--brunobenfica.repl.co/gastos';
+const apiUrl = 'https://jsonservertiaw--robertasophiacs.repl.co/tipoGastos';
 
 function displayMessage(mensagem) {
   msg = document.getElementById('msg');
