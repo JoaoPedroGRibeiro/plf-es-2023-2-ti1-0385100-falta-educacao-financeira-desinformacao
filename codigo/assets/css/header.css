@@ -2,11 +2,12 @@
 
 body {
     background-color: #e5e5e5;
+    font-family: 'Poppins', sans-serif;
+
 }
 
 header {
     width: 210px;
-    font-family: 'Poppins', sans-serif;
 }
 
 nav a {

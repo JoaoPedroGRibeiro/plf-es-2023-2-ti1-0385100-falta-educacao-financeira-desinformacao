@@ -174,11 +174,19 @@ h2, h3, h4 {
     flex-direction: row;
 }
 
-#funcoesRegistros button {
-    padding: 8px 15px;
-    margin: 5px;
-    border-radius: 6px;
-    background-color: rgb(255, 135, 65);
+#funcoesRegistros button{
+    background-color: #075da8;
+    padding: 10px;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    margin: 10px;
+    border: solid transparent 1px;
+}
+
+#funcoesRegistros button:hover {
+    background-color: darkblue;
+    transition: 0.5s;
 }
 
 #funcoesRegistros ul {
