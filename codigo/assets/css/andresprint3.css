@@ -17,6 +17,21 @@ body {
     box-shadow: 0px 0 10px rgb(156, 148, 148);
 }
 
+#btnVoltar {
+    background-color: #075da8;
+    padding: 10px;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    margin: 10px;
+    border: solid transparent 1px;
+  }
+  
+  #btnVoltar:hover {
+    background-color: darkblue;
+    transition: 0.5s;
+  }
+
 h1 {
     color: #007BFF;
     font-size: 28px;
@@ -40,7 +55,7 @@ input, select {
 
 button {
     padding: 10px 20px;
-    background-color: #007BFF;
+    background-color: #075da8;
     border: none;
     color: #fff;
     cursor: pointer;
@@ -49,7 +64,7 @@ button {
 }
 
 button:hover {
-    background-color: #0056b3;
+    background-color: darkblue;
 }
 
 ul {
