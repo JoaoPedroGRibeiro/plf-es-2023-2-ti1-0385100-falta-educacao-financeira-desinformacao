@@ -3,20 +3,13 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>ÉconoSage</title>
-    <script src="https://code.highcharts.com/highcharts.js"></script>
-    <script src="https://code.highcharts.com/modules/data.js"></script>
-    <script src="https://code.highcharts.com/modules/drilldown.js"></script>
-    <script src="https://code.highcharts.com/modules/exporting.js"></script>
-    <script src="https://code.highcharts.com/modules/export-data.js"></script>
-    <script src="https://code.highcharts.com/modules/accessibility.js"></script>
-    <script src="../assets/js/appbruno2.js" defer></script>
+    <title>Sprint3</title>
     <link rel="stylesheet" href="../assets/css/header.css" />
-    <link rel="stylesheet" href="../assets/css/stylebruno2.css" />
+    <link rel="stylesheet" href="../assets/css/eduardosprint3.css" />
+    <script src="../assets/js/jsesuardosprint3.js" defer></script>
   </head>
 
-  <body onload="init()">
-    <div id="fundoForms"></div>
+  <body>
     <header>
       <nav>
         <ul class="navegacao">
@@ -36,7 +29,7 @@
                 <p>Conta</p>
               </div>
             </li>
-        </a>
+          </a>
           <li>
             <div>
               <svg
@@ -106,13 +99,26 @@
         </ul>
       </nav>
     </header>
-
-    <div id="holder_info">
-      <div class="bg">
-        <figure class="highcharts-figure">
-          <div id="container"></div>
-        </figure>
-      </div>
+    <div id="central">
+      <figure id="foto">
+        <img
+          id="fotoUsuario"
+          src="https://pm1.aminoapps.com/7992/71b65c496332e99ff95c9dabc403f5d6f0b252fbr1-764-898v2_uhq.jpg"
+          alt="Foto do usuário"
+        />
+      </figure>
+      <figcaption id="infos">
+        <div id="usuario">
+          <h2>...</h2>
+        </div>
+        <div id="pontos">
+          <h3>...</h3>
+        </div>
+        <div id="perfil">
+          <h4>...</h4>
+        </div>
+      </figcaption>
+      <div id="refazer"><a href="../pages/quiz.html">Refazer Teste</a></div>
     </div>
   </body>
 </html>

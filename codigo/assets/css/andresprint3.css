@@ -1,20 +1,20 @@
 body {
     font-family: Arial, sans-serif;
-    background-color: #222;
-    color: #fff;
+    color: #000000;
     text-align: center;
     margin: 0;
     padding: 0;
+    background-color: #e5e5e5;
 }
 
 .container {
-    background-color: #333;
+    background-color: white;
     border-radius: 10px;
     width: 80%;
     max-width: 600px;
     margin: 20px auto;
     padding: 20px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    box-shadow: 0px 0 10px rgb(156, 148, 148);
 }
 
 h1 {
@@ -30,12 +30,12 @@ h1 {
 }
 
 input, select { 
-    width: 100%;
+    border: 1px solid rgb(182, 182, 182);
+    width: 80%;
     padding: 10px;
-    margin: 5px 0;
-    background-color: #444;
-    border: none;
-    color: #fff;
+    color: #000000;
+    margin: 6px;
+    border-radius: 5px;
 }
 
 button {
