@@ -1,4 +1,4 @@
-Highcharts.chart('container', {
+Highcharts.chart('container2', {
     chart: {
         plotBackgroundColor: null,
         plotBorderWidth: null,
