@@ -1,149 +1,73 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <link
-      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="../assets/css/stylebruno3.css" />
-    <script src="https://code.jquery.com/jquery-3.3.1.min.js" defer></script>
-    <script src="../assets/js/scriptbruno3.js" defer></script>
-    <title>Calculadora de Estimativa de Ganhos</title>
+    <link rel="stylesheet" href="../assets/css/andresprint3.css" />
+    <link rel="shortcut icon" href="../ico/imagem_2023-11-29_180415366-removebg-preview.ico" />
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <title>ÉconoSage</title>
   </head>
-
   <body>
     <div class="container">
-      <section class="content">
-      <a href="cadastroGastos.html">Voltar</a>
-        <h3 class="text-center">Calculadora de Estimativa de Ganhos</h3>
-        <hr />
-        <form onsubmit="return false">
-          <div class="row">
-            <div class="col-md-6">
-              <label class="control-label">Valor Inicial:</label>
-              <input
-                class="montante form-control"
-                type="number"
-                placeholder="Informe o valor inicial do investimento"
-              />
-            </div>
-            <div class="col-md-6">
-              <label class="control-label">Aporte Mensal:</label>
-              <input
-                class="aporte form-control"
-                type="number"
-                placeholder="Senão, vazio"
-              />
-            </div>
+      <a id="btnVoltar" href="cadastroGastos.html">Voltar</a>
+      <h1>Controle de gastos</h1>
+
+      <div class="balance-section">
+        <input type="number" id="initial-money" placeholder="Saldo Inicial" />
+        <button id="update-money">Atualizar Saldo</button>
+        <h2 id="total-money">Saldo: R$ 0.00</h2>
+      </div>
+
+      <div class="input-section">
+        <input type="text" id="expense-input" placeholder="Despesa" />
+        <input type="number" id="amount-input" placeholder="Valor da Despesa" />
+        <select id="category-input">
+          <option value="Alimentação">Alimentação</option>
+          <option value="Transporte">Transporte</option>
+          <option value="Moradia">Moradia</option>
+          <option value="Lazer">Lazer</option>
+          <option value="Outros">Outros</option>
+        </select>
+        <button id="add-expense">Adicionar Despesa</button>
+      </div>
+
+      <div class="expenses">
+        <h2>Despesas</h2>
+        <div class="filter-section">
+          <label for="filter-category">Filtrar por Categoria:</label>
+          <select id="filter-category">
+            <option value="Todas">Todas</option>
+            <option value="Alimentação">Alimentação</option>
+            <option value="Transporte">Transporte</option>
+            <option value="Moradia">Moradia</option>
+            <option value="Lazer">Lazer</option>
+            <option value="Outros">Outros</option>
+          </select>
+          <div>
+            <label for="filter-sorting">Ordenar por:</label>
+            <select id="filter-sorting" style="width:60%">
+              <option value="Valor Crescente">Valor Crescente</option>
+              <option value="Valor Decrescente">Valor Decrescente</option>
+            </select>
           </div>
-          <hr />
-          <div class="row">
-            <legend>Taxa</legend>
-            <div class="col-md-6">
-              <label class="control-label">Mensal (padrão)</label>
-              <input
-                class="taxa form-control"
-                type="number"
-                placeholder="Informe a taxa de juros do investimento"
-              />
-            </div>
-            <div class="col-md-6">
-              <label class="control-label">Ou taxa anual</label>
-              <input
-                class="taxaAno form-control"
-                type="number"
-                placeholder="Senão, vazio"
-              />
-            </div>
-          </div>
-          <hr />
-          <div class="row">
-            <legend>Prazo</legend>
-            <div class="col-md-4">
-              <label class="control-label">Em meses (padrão)</label>
-              <input
-                class="prazo form-control"
-                type="number"
-                placeholder="Meses"
-              />
-            </div>
-            <div class="col-md-4">
-              <label>Ou em anos</label>
-              <input
-                class="prazoAno dataput form-control"
-                type="number"
-                placeholder="Senão, vazio"
-              />
-            </div>
-            <div class="col-md-4">
-              <label>Ou até data específica</label>
-              <input
-                class="ateVencer dataput form-control"
-                type="date"
-                placeholder="Data do Vencimento"
-              />
-            </div>
-          </div>
-          <hr />
-          <div class="row">
-            <div class="col-md-12 text-center">
-              <input
-                type="submit"
-                class="btn btn-primary btn-block btn-lg simulaUm"
-                value="Calcular"
-              />
-            </div>
-          </div>
-        </form>
-        <hr />
-        <div class="row resultados">
-          <div class="table-responsive">
-            <table
-              class="table table-bordered table-hover table-striped table-dark"
-            >
-              <thead>
-                <tr>
-                  <th>Aplicação inicial</th>
-                  <th>Soma Aplicações</th>
-                  <th>Juros totais</th>
-                  <th>Acumulado</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td>R$ <span class="apIn">.</span></td>
-                  <td>R$ <span class="apOut">.</span></td>
-                  <td>R$ <span class="apJu">.</span></td>
-                  <td>R$ <span class="apTot">.</span></td>
-                </tr>
-              </tbody>
-            </table>
-          </div>
-          <section>
-            <label class="control-label">Dados parciais e acumulados:</label>
-            <p></p>
-            <div id="printfinal" class="table-responsive">
-              <table
-                class="table table-bordered table-hover table-striped table-dark"
-              >
-                <thead>
-                  <tr>
-                    <th>Mês</th>
-                    <th>Aportes</th>
-                    <th>Juros no mês</th>
-                    <th>Juros total</th>
-                    <th>Acumulado</th>
-                  </tr>
-                </thead>
-                <tbody></tbody>
-              </table>
-            </div>
-          </section>
         </div>
-      </section>
+        <ul id="expense-list"></ul>
+      </div>
+
+      <div class="total">
+        <h2 id="total-expenses">Total de Despesas: R$ 0.00</h2>
+      </div>
+
+      <div class="chart-section">
+        <h2></h2>
+        <canvas id="expense-chart"></canvas>
+      </div>
+      <div class="chart-section">
+        <h2></h2>
+        <canvas id="pie-chart"></canvas>
+      </div>
     </div>
+    <script src="../assets/js/andresprint3.js"></script>
   </body>
 </html>

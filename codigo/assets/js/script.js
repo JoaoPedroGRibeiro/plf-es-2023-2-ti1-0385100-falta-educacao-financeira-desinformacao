@@ -1,4 +1,4 @@
-const apiUrl = "https://jsonserver.eduardomoreir20.repl.co/contatos";
+const apiUrl = "https://jsonservertiaw--robertasophiacs.repl.co/perfil";
 
 var answers = {};
 
@@ -92,16 +92,12 @@ submit5.addEventListener("click", function () {
     "questão3": answers.question3,
     "questão4": answers.question4,
     "questão5": answers.question5,
+    "valorTotal": total,
     "resultado": resultado
   };
 
-  createResposta(respostas);
-  console.log(respostas);
+  atualizaResposta(1, respostas);
 });
-
-function teste(){
-  console.log('teste');
-}
 
 function growProgressBar(percentage_width) {
   var bar = document.getElementById("progress_bar");
@@ -155,10 +151,26 @@ function totalScore() {
   return total_score;
 }
 
-
 function createResposta(contato, refreshFunction) {
   fetch(apiUrl, {
     method: "POST",
+    headers: {
+      "Content-Type": "application/json",
+    },
+    body: JSON.stringify(contato),
+  })
+    .then((response) => response.json())
+    .then((data) => {
+      if (refreshFunction) refreshFunction();
+    })
+    .catch((error) => {
+      console.error("Erro ao inserir contato via API JSONServer:", error);
+    });
+}
+
+function atualizaResposta(id, contato, refreshFunction) {
+  fetch(`${apiUrl}/${id}`, {
+    method: "PUT",
     headers: {
       "Content-Type": "application/json",
     },

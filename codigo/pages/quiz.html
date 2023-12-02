@@ -1,97 +1,202 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
+  <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Quiz</title>
+    <title>ÉconoSage</title>
     <link rel="stylesheet" href="../assets/css/quizstyle.css" />
-</head>
+    <link rel="shortcut icon" href="../ico/imagem_2023-11-29_180415366-removebg-preview.ico" />
+  </head>
 
-<body>
+  <body>
     <main>
-        <div class="container">	
-            <div class="row">
-                <div class="two-thirds column">
-                <h1>Perfil de investidor</h1>
-        
-                <div id="progress_bar"></div>
-                    <form class="questions_box">
-        
-                        <div id="question-1">
-                          <h2>Questão 1</h2>
-                            <h3>Qual frase representa melhor seus objetivos e expectativas ao investir?</h3>
-                            <input id="question-1-answer-a" type="radio" name="favelang" value=1> Quero preservar meu patrimônio, sem risco de perdas<br>
-                            <input id="question-1-answer-b" type="radio" name="favelang" value=2> Desejo obter retornos moderados, ciente de que, para isso, preciso expor uma parcela do meu patrimônio a maior risco.<br>
-                            <input id="question-1-answer-c" type="radio" name="favelang" value=3> Minha prioridade é obter altos retornos, mesmo que isso signifique a possibilidade de perdas expressivas.<br>
-                            <div id="submit1" class="button">Próxima pergunta</div>
-                            
-                            
-                            
-                    <div class="clearfix"></div>
-                        </div>
-        
-                       <div id="question-2">
-                           <h2>Questão 2</h2>
-                           <h3>Qual frase representa melhor o seu momento atual como investidor?</h3>
-                         <input id="question-2-answer-a" type="radio" name="favelang" value="1"> Ainda não possuo patrimônio financeiro relevante.<br>
-                           <input id="question-2-answer-b" type="radio" name="favelang" value="2"> Já construí meu patrimônio, quero apenas mante-lo.<br>
-                           <input id="question-2-answer-c" type="radio" name="favelang" value="3"> Já iniciei a construção de meu patrimônio e pretendo aumentá-lo. <br>
-                           <div id="submit2" class="button">Próxima pergunta</div>
-                           <div id="voltar1" class="buttonprev">Pergunta anterior</div>
-                   <div class="clearfix"></div>
-                       </div>
-                      
-                       <div id="question-3">	
-                           <h2>Questão 3</h2>
-                           <h3>Por quanto tempo pretende manter seus recursos investidos?</h3>
-                         <input id="question-3-answer-a" type="radio" name="favelang" value="1"> Até um ano.<br>
-                           <input id="question-3-answer-b" type="radio" name="favelang" value="2"> De 1 a 4 anos.<br>
-                           <input id="question-3-answer-c" type="radio" name="favelang" value="3"> Por mais de 4 anos. <br>
-                           <div id="submit3" class="button">Próxima pergunta</div>
-                           <div id="voltar2" class="buttonprev">Pergunta anterior</div>
-                   <div class="clearfix"></div>
-                       </div>
-        
-                 <div id="question-4">
-                    <h2>Questão 4</h2>
-                    <h3>O que vem na sua cabeça quando você pensa em um investimento "arriscado"?</h3>
-                    <input id="question-4-answer-a" type="radio" name="favelang" value="1"> Arriscar perder meu dinheiro?! Prefiro algo certeiro. <br>
-                    <input id="question-4-answer-b" type="radio" name="favelang" value="2"> Uma pitadinha de risco em parte do meu dinheiro não me faria mal.<br>
-                    <input id="question-4-answer-c" type="radio" name="favelang" value="3"> Excelente! Oportunidade de grande valorização.<br>
-                    <div id="submit4" class="button">Próxima pergunta</div>
-                    <div id="voltar3" class="buttonprev">Pergunta anterior</div>
-                    <div class="clearfix"></div>
-                  </div>
-        
-                  <div id="question-5">
-                    <h2>Questão 5</h2>
-                    <h3>Qual percentual dos seus recursos você espera resgatar nos próximos meses?</h3>
-                    <input id="question-5-answer-a" type="radio" name="favelang" value="1"> Mais de 25% <br>
-                    <input id="question-5-answer-b" type="radio" name="favelang" value="2"> Entre 5% e 25%<br>
-                    <input id="question-5-answer-c" type="radio" name="favelang" value="3"> Menos de 5% ou não pretende resgatar.<br>
-                    <div id="submit5" class="button">Enviar questionário</div>
-                    <div id="voltar4" class="buttonprev">Pergunta anterior</div>
-                    <div class="clearfix"></div>
-                  </div>
-        
-                 <div id="question-6" onload="teste()"> 
-                   <h2>Obrigado por responder o questionário!</h2>
-                   <h3>Seu perfil é: </h3>
-                   <h1 id=printscoreinfo></h1>
-                   <p id=printtotalscore></p>
-                   <div id="incial" class="button"><a href="capaquiz.html">Voltar para página incial</a></div>
-                 </div>
-        
-        
-                          
-                    </form>
-        
+      <div class="container">
+        <div class="row">
+          <div class="two-thirds column">
+            <div style="display:flex; flex-direction: row; align-items: center; margin-top: 50px;">
+              <a id="btnVoltar" href="conta.html">Voltar</a>
+              <h1>Perfil de investidor</h1>
+            </div>
+
+            <div id="progress_bar"></div>
+            <form class="questions_box">
+              <div id="question-1">
+                <h2>Questão 1</h2>
+                <h3>
+                  Qual frase representa melhor seus objetivos e expectativas ao
+                  investir?
+                </h3>
+                <input
+                  id="question-1-answer-a"
+                  type="radio"
+                  name="favelang"
+                  value="1"
+                />
+                Quero preservar meu patrimônio, sem risco de perdas<br />
+                <input
+                  id="question-1-answer-b"
+                  type="radio"
+                  name="favelang"
+                  value="2"
+                />
+                Desejo obter retornos moderados, ciente de que, para isso,
+                preciso expor uma parcela do meu patrimônio a maior risco.<br />
+                <input
+                  id="question-1-answer-c"
+                  type="radio"
+                  name="favelang"
+                  value="3"
+                />
+                Minha prioridade é obter altos retornos, mesmo que isso
+                signifique a possibilidade de perdas expressivas.<br />
+                <div id="submit1" class="button">Próxima pergunta</div>
+
+                <div class="clearfix"></div>
+              </div>
+
+              <div id="question-2">
+                <h2>Questão 2</h2>
+                <h3>
+                  Qual frase representa melhor o seu momento atual como
+                  investidor?
+                </h3>
+                <input
+                  id="question-2-answer-a"
+                  type="radio"
+                  name="favelang"
+                  value="1"
+                />
+                Ainda não possuo patrimônio financeiro relevante.<br />
+                <input
+                  id="question-2-answer-b"
+                  type="radio"
+                  name="favelang"
+                  value="2"
+                />
+                Já construí meu patrimônio, quero apenas mante-lo.<br />
+                <input
+                  id="question-2-answer-c"
+                  type="radio"
+                  name="favelang"
+                  value="3"
+                />
+                Já iniciei a construção de meu patrimônio e pretendo aumentá-lo.
+                <br />
+                <div id="submit2" class="button">Próxima pergunta</div>
+                <div id="voltar1" class="buttonprev">Pergunta anterior</div>
+                <div class="clearfix"></div>
+              </div>
+
+              <div id="question-3">
+                <h2>Questão 3</h2>
+                <h3>
+                  Por quanto tempo pretende manter seus recursos investidos?
+                </h3>
+                <input
+                  id="question-3-answer-a"
+                  type="radio"
+                  name="favelang"
+                  value="1"
+                />
+                Até um ano.<br />
+                <input
+                  id="question-3-answer-b"
+                  type="radio"
+                  name="favelang"
+                  value="2"
+                />
+                De 1 a 4 anos.<br />
+                <input
+                  id="question-3-answer-c"
+                  type="radio"
+                  name="favelang"
+                  value="3"
+                />
+                Por mais de 4 anos. <br />
+                <div id="submit3" class="button">Próxima pergunta</div>
+                <div id="voltar2" class="buttonprev">Pergunta anterior</div>
+                <div class="clearfix"></div>
+              </div>
+
+              <div id="question-4">
+                <h2>Questão 4</h2>
+                <h3>
+                  O que vem na sua cabeça quando você pensa em um investimento
+                  "arriscado"?
+                </h3>
+                <input
+                  id="question-4-answer-a"
+                  type="radio"
+                  name="favelang"
+                  value="1"
+                />
+                Arriscar perder meu dinheiro?! Prefiro algo certeiro. <br />
+                <input
+                  id="question-4-answer-b"
+                  type="radio"
+                  name="favelang"
+                  value="2"
+                />
+                Uma pitadinha de risco em parte do meu dinheiro não me faria
+                mal.<br />
+                <input
+                  id="question-4-answer-c"
+                  type="radio"
+                  name="favelang"
+                  value="3"
+                />
+                Excelente! Oportunidade de grande valorização.<br />
+                <div id="submit4" class="button">Próxima pergunta</div>
+                <div id="voltar3" class="buttonprev">Pergunta anterior</div>
+                <div class="clearfix"></div>
+              </div>
+
+              <div id="question-5">
+                <h2>Questão 5</h2>
+                <h3>
+                  Qual percentual dos seus recursos você espera resgatar nos
+                  próximos meses?
+                </h3>
+                <input
+                  id="question-5-answer-a"
+                  type="radio"
+                  name="favelang"
+                  value="1"
+                />
+                Mais de 25% <br />
+                <input
+                  id="question-5-answer-b"
+                  type="radio"
+                  name="favelang"
+                  value="2"
+                />
+                Entre 5% e 25%<br />
+                <input
+                  id="question-5-answer-c"
+                  type="radio"
+                  name="favelang"
+                  value="3"
+                />
+                Menos de 5% ou não pretende resgatar.<br />
+                <div id="submit5" class="button">Enviar questionário</div>
+                <div id="voltar4" class="buttonprev">Pergunta anterior</div>
+                <div class="clearfix"></div>
+              </div>
+
+              <div id="question-6" onload="teste()">
+                <h2>Obrigado por responder o questionário!</h2>
+                <h3>Seu perfil é:</h3>
+                <h1 id="printscoreinfo"></h1>
+                <p id="printtotalscore"></p>
+                <div id="incial" class="button">
+                  <a href="conta.html">Voltar para página incial</a>
                 </div>
               </div>
+            </form>
           </div>
+        </div>
+      </div>
     </main>
     <script src="../assets/js/script.js"></script>
-</body>
-
+  </body>
 </html>
