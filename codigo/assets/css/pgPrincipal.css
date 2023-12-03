@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;700&family=Roboto:wght@100;300;400;500;700;900&family=Source+Sans+Pro:wght@200;300;400;600;700;900&display=swap'); 
+header {
+    width: 210px;
+}
+main{
+    font-family: poppins;
+}
+nav a {
+    text-decoration: none;
+}
+
+nav {
+    background-color: #075da8;
+    width: 190px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+}
+
+nav ul {
+    margin-top: 20px;
+    list-style: none;
+    padding-inline-start: 0;
+}
+
+nav li div {
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+    color: aliceblue;
+    cursor: pointer;
+}
+
+svg {
+    fill: rgb(255, 109, 46);
+}
+
+nav li:hover {
+    background-color: #06559a;
+}
+
+nav li:hover div {
+    transform: scale(1.04, 1.04);
+    transition-duration: 0.4s;
+}
+
+@media (max-width: 700px) {
+    .navegacao p {
+        display: none;
+    }
+
+    nav, header {
+        width: 50px;
+    }
+    main{
+        margin-left: 0%;
+    }
+    .container{
+        margin-left: 0%;
+        display: flex;
+        align-items: left;
+        justify-content: left;
+    }
+
+}
+
+main{
+    color: black;
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 210px;
+    margin-top: 20px;
+}
+.carousel{
+    width: 65%;
+    min-width: 500px;
+}
+
+.carrossel > .container{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.chamadas{
+    width: 100%;
+    min-width: 300px;
+    margin-left: 20px;
+}
+.chamadas > .container{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.chamadas h1{
+    font-size: 30px;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+.chamadas p{
+    font-size: 20px;
+    font-weight: 300;
+    margin-bottom: 10px;
+}
+.chamadas .row{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-top:40px;
+
+}
+.chamadas img{
+    width: 100%;
+    min-width: 300px;
+    cursor: pointer;
+    object-fit: cover;
+}
+.chamadas .row div{
+    margin-bottom: 20px;
+}

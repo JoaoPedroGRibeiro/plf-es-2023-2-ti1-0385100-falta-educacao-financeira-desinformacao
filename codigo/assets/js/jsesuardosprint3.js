@@ -4,9 +4,6 @@ window.addEventListener("DOMContentLoaded", () => {
     .then((dataJSON) => {
       const dados = dataJSON[0];
       let info = `
-            <div id="usuario">
-                <p><b>Id Usuário:</b> ${dados.id}</p>
-            </div>
             <div id="pontos">
                 <p><b>Pontuação:</b> ${dados.valorTotal}</p>
             </div>
