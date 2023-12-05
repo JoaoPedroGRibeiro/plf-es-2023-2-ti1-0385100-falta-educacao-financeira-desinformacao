@@ -44,7 +44,7 @@ function preencheSelect(data){
     selectGasto.innerHTML = '';
 
     selectGasto.innerHTML += `
-    <option value="">Selecione um valor</option>`;
+    <option value="">Selecione uma categoria</option>`;
 
     data.forEach((gasto) => {
         const tipoGasto = `

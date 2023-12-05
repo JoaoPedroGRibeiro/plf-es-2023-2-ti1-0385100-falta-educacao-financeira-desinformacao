@@ -31,21 +31,21 @@ Highcharts.chart('container2', {
         name: 'Categorias',
         colorByPoint: true,
         data: [{
-            name: 'Categoria 1',
+            name: 'Eletrônicos',
             y: 74.77,
             sliced: true,
             selected: true
         },  {
-            name: 'Categoria 2',
+            name: 'Transporte',
             y: 12.82
         },  {
-            name: 'Categoria 3',
+            name: 'Entretimento',
             y: 4.63
         }, {
-            name: 'Categoria 4',
+            name: 'Viagem',
             y: 2.44
         }, {
-            name: 'Categoria 5',
+            name: 'Tênis',
             y: 2.02
         }, {
             name: 'Outros',
