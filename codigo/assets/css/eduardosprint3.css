@@ -1,0 +1,111 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;700&family=Roboto:wght@100;300;400;500;700;900&family=Source+Sans+Pro:wght@200;300;400;600;700;900&display=swap");
+body {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+button {
+  background-color: #075da8;
+  padding: 10px;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  margin: 10px;
+  border: solid transparent 1px;
+}
+
+button {
+  background-color: #06559a;
+}
+
+
+#fotoUsuario {
+  border-radius: 100%;
+}
+
+#central {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 10px;
+  box-shadow: 0px 0 10px rgb(156, 148, 148);
+  text-align: left;
+}
+
+nav li div {
+    align-items: center;
+}
+
+figure {
+  display: flex;
+  flex-wrap: wrap;
+  height: 100%;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+}
+
+figcaption {
+  display: flex;
+  flex-wrap: wrap;
+  height: 100%;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+}
+figcaption div {
+  display: flex;
+  flex-wrap: wrap;
+  height: 100%;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+}
+#foto img {
+  margin-top: 3%;
+  max-width: 200px;
+  max-height: 200px;
+  display: block;
+}
+
+#refazer {
+  margin: 10px 0 8px 0;
+  cursor: pointer;
+  font-size: 1em;
+  border: none;
+  padding: 10px 15px;
+  line-height: 18px;
+  -moz-border-radius: 3px;
+  -webkit-border-radius: 3px;
+  -o-border-radius: 3px;
+  border-radius: 3px;
+  vertical-align: baseline;
+  background: #075da8;
+  color: white;
+  text-decoration: none !important;
+  -webkit-font-smoothing: subpixel-antialiased;
+  -webkit-transition: background-color 200ms ease-in-out;
+  -moz-transition: background-color 200ms ease-in-out;
+  -o-transition: background-color 200ms ease-in-out;
+  transition: background-color 200ms ease-in-out;
+}
+
+#refazer:hover {
+  background-color: #059fdb !important;
+  color: white;
+}
+
+#refazer a {
+  text-decoration: none;
+  color: white;
+}

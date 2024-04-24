@@ -1,0 +1,102 @@
+body {
+    font-family: Arial, sans-serif;
+    color: #000000;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    background-color: #e5e5e5;
+}
+
+.container {
+    background-color: white;
+    border-radius: 10px;
+    width: 80%;
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    box-shadow: 0px 0 10px rgb(156, 148, 148);
+}
+
+#btnVoltar {
+    background-color: #075da8;
+    padding: 10px;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    margin: 10px;
+    border: solid transparent 1px;
+  }
+  
+  #btnVoltar:hover {
+    background-color: darkblue;
+    transition: 0.5s;
+  }
+
+h1 {
+    color: #007BFF;
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+.input-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+input, select { 
+    border: 1px solid rgb(182, 182, 182);
+    width: 80%;
+    padding: 10px;
+    color: #000000;
+    margin: 6px;
+    border-radius: 5px;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #075da8;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    margin-top: 10px;
+    border-radius: 10px;
+}
+
+button:hover {
+    background-color: darkblue;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+li {
+    display: flex;
+    justify-content: space-between;
+    padding: 5px 0;
+    border-bottom: 1px solid #555;
+}
+
+li:last-child {
+    border: none;
+}
+
+.balance-section {
+    margin-top: 20px;
+}
+
+.total-money {
+    font-weight: bold;
+    font-size: 20px;
+    margin-bottom: 10px;
+    color: #007BFF;
+}
+
+.total-expenses {
+    font-weight: bold;
+    font-size: 20px;
+    color: #007BFF;
+    margin-bottom: 20px;
+}

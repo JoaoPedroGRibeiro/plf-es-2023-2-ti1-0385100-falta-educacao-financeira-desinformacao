@@ -1,0 +1,82 @@
+label {
+    font-weight: bolder;
+}
+::placeholder {
+    color: rgb(133, 171, 195) !important;
+    opacity: 3;
+}
+::-webkit-input-placeholder { 
+    color:  rgb(148, 176, 193) !important;
+}
+:-moz-placeholder { 
+    color:  lightskyblue !important;
+    opacity:  3;
+ }
+ h1 {
+     text-align: center;
+ }
+ #msg {
+     height: 60px;
+ }
+ #grid-contatos tbody {
+     cursor: pointer;
+ }
+
+ .cointaner{
+    margin-top: 10px !important;
+ }
+
+input[type=button]{
+    background-color: #075da8;
+    padding: 10px;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    border: solid 1px transparent;
+}
+
+input[type=button]:hover{
+    background-color: darkblue;
+    transition: 0.5s;
+}
+
+#btnDelete {
+    background-color: rgb(158, 7, 7);
+}
+
+#btnDelete:hover {
+    background-color: rgb(207, 20, 20);
+}
+
+table {
+    box-shadow: 0px 0 10px rgb(156, 148, 148);
+    border-radius: 5px;
+}
+
+tr {
+    background-color: #ffffff;
+}
+
+tr:nth-child(even) {
+    background-color: #ececec;
+  }
+
+tbody tr:hover {
+    background-color: rgb(199, 217, 236);
+    transition: 0.4s;
+    cursor: pointer;
+}
+
+#btnVoltar {
+    background-color: #075da8;
+    padding: 10px;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    margin: 10px;
+}
+
+#btnVoltar:hover {
+    background-color: darkblue;
+    transition: 0.5s;
+}
